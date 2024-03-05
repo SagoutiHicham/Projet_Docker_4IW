@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  react-app:
+    image: zangeets/react-frontend:latest  # Utilisation de l'image Docker Hub
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network: {}
